@@ -1,0 +1,202 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+@import url('https://googleapis.com');
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ================================
+    外箱
+================================== */
+.main{
+    width : 100%;
+}
+
+/* ================================
+    内箱
+================================== */
+.main-container{
+    width : 100%;
+    max-width : 1518px;
+    max-height : 866px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+/* ================================
+    左の箱
+================================== */
+.main-left{
+    width : 50%;
+    display : flex;
+    flex-direction : column;
+}
+
+/* ================================
+    タイトル
+================================== */
+.main-left-title{
+    font-size : 133px;
+    font-weight : 500;
+    color : #1f1f1f;
+    flex-wrap : nowrap;
+}
+
+/* ================================
+    テキスト
+================================== */
+.main-left-text{
+    font-size : 24px;
+    font-weight : 500;
+    color : #545454;
+    letter-spacing : 0.755em;
+    max-width : 759px;
+    margin-left : 8px;
+}
+
+/* ================================
+    左のボタン
+================================== */
+.main-left-btn{
+    font-size : 24px;
+    font-weight : 600;
+    color : #ffffff;
+    width : 302px;
+    height : 86px;
+    background-color : #1f1f1f;
+    border-radius : 4px;
+    text-decoration : none;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin-left : 8px;
+    margin-top : 102px;
+}
+
+/* ================================
+    カード全体
+================================== */
+.main-left-flex{
+    display : flex;
+    justify-content : space-between;
+    gap : 87px;
+    margin-left : 8px;
+    width : 100%;
+    max-width : 699px;
+    max-height : 116px;
+}
+
+/* ================================
+    各カード
+================================== */
+.main-left-card{
+    width : 100%;
+    max-width : 178px;
+    height : 116px;
+    margin-bottom : 62px;
+}
+
+/* ================================
+    数字
+================================== */
+.main-left-num{
+    font-size : 70px;
+    font-weight : 400;
+    color : #545454;
+    text-align : center;
+}
+
+/* ================================
+    内容
+================================== */
+.main-left-item{
+    font-size : 22px;
+    font-weight : 400;
+    color : #545454;
+    text-align : center;
+}
+
+/* ================================
+    右の箱
+================================== */
+.main-right{
+    width : 50%;
+    height : 866px;
+    position : relative;
+}
+
+/* ================================
+    上の画像
+================================== */
+.main-right-img{
+    position : absolute;
+    width :507px;
+    height : 428px;
+    border-radius : 4px;
+    top : 0;
+    right : 0;
+}
+
+/* ================================
+    四角の枠
+================================== */
+.main-right-box{
+    position : absolute;
+    border : 2px solid #1f1f1f;
+    width : 206px;
+    height : 187px;
+    border-radius : 4px;
+    top : 429px;
+    right : 561px;
+    z-index : 1;
+}
+
+/* ================================
+    下の画像
+================================== */
+.main-right-img2{
+    position : absolute;
+    width : 638px;
+    height : 406px;
+    border-radius : 4px;
+    bottom : 0px;
+    right : 99px;
+    z-index : 2;
+}
+
+/* ================================
+    右のボタン
+================================== */
+.main-right-btn{
+    position : absolute;
+    width : 151px;
+    height : 151px;
+    background-color : #1f1f1f;
+    color : #ffffff;
+    font-size : 55px;
+    text-decoration : none;
+    bottom : 0px;
+    right : 0px;
+    z-index : 3;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+/* ================================
+    フッター 
+================================== */
+.main-footer {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #a0a0a0;
+    background-color: #ffffff; /* 背景に合わせて調整 */
+}
