@@ -21,13 +21,14 @@
     max-height : 866px;
     display : flex;
     justify-content : center;
-    align-items : center;
+    align-items : stretch;
 }
 
 /* ================================
     左の箱
 ================================== */
 .main-left{
+    /* 50%では小さいため少し大きくする */
     width : 65%;
     display : flex;
     flex-direction : column;
@@ -50,7 +51,8 @@
     font-size : 24px;
     font-weight : 500;
     color : #545454;
-    letter-spacing : 0.755em;
+    /* 行間を高くする */
+    line-height : 1.755;
     max-width : 759px;
     margin-left : 8px;
 }
@@ -121,6 +123,10 @@
     右の箱
 ================================== */
 .main-right{
+    /* 
+        左を大きくしたため縮める
+        右側はabsoluteで動かしているため、はみ出してもOK
+     */
     width : 35%;
     height : 866px;
     position : relative;
