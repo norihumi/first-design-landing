@@ -147,7 +147,7 @@
     height : 428px;
     border-radius : 4px;
     top : 0;
-    left : 24.3px;
+    left : 4.57%;
 }
 
 /* ================================
@@ -160,7 +160,7 @@
     height : 187px;
     border-radius : 4px;
     top : 429px;
-    left : -235.7px;
+    left : -44.36%;
     z-index : 1;
 }
 
@@ -173,7 +173,7 @@
     height : 406px;
     border-radius : 4px;
     top : 460px;
-    left : -205.7px;
+    left : -38.72%;
     z-index : 2;
 }
 
@@ -189,7 +189,7 @@
     font-size : 55px;
     text-decoration : none;
     top : 715px;
-    left : 380.3px;
+    left : 71.78%;
     z-index : 3;
     display : flex;
     justify-content : center;
