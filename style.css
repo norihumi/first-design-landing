@@ -28,7 +28,6 @@
     左の箱
 ================================== */
 .main-left{
-    /* 50%では小さいため少し大きくする */
     width : 65%;
     display : flex;
     flex-direction : column;
@@ -94,9 +93,20 @@
 ================================== */
 .main-left-card{
     width : 100%;
-    max-width : 178px;
     height : 116px;
     margin-bottom : 62px;
+}
+
+.card-left {
+    width: 180px;
+}
+
+.card-center {
+    width: 178px;
+}
+
+.card-right {
+    width: 167px;
 }
 
 /* ================================
@@ -123,10 +133,6 @@
     右の箱
 ================================== */
 .main-right{
-    /* 
-        左を大きくしたため縮める
-        右側はabsoluteで動かしているため、はみ出してもOK
-     */
     width : 35%;
     height : 866px;
     position : relative;
