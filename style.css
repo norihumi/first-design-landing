@@ -201,7 +201,7 @@
 }
 
 /* ================================
-    フッター 
+    フッター
 ================================== */
 .main-footer {
     width: 100%;
@@ -210,4 +210,59 @@
     font-size: 14px;
     color: #a0a0a0;
     background-color: #ffffff; /* 背景に合わせて調整 */
+}
+
+/* ================================
+    レスポンシブ
+================================== */
+/* ==========================================
+   📱 スマホ用スタイル（画面幅が768px以下のとき）
+========================================== */
+@media (max-width: 768px) {
+
+    .main-container {
+        width: 100%;
+        max-height: none;
+        flex-direction: column;
+        padding: 40px 20px; /* 上下に少し広めの余白をとる */
+        
+        /* ⭕ 【大技】パソコン版の画像を、コンテナ全体の背景に引っ張ってくる！ */
+        background-image: url('town.jpg'); /* 👈 パソコン版で使っている主役画像のパスに変えてね */
+        background-size: cover; /* 画像を隙間なく綺麗にフィットさせる */
+        background-position: center; /* 画像の中心を画面の真ん中に合わせる */
+        background-repeat: no-repeat;
+    }
+
+    .main-left {
+        width: 100%;
+        
+        /* ⭕ 【天才の座布団】ほんのり透ける高級感のある黒い座布団を敷く */
+        background-color: rgba(255, 255, 255, 0.5);
+        /* もし黒ベースが良ければ `rgba(0, 0, 0, 0.7)` にしてみてね */
+        
+        padding: 30px; /* 座布団の内側の余白 */
+        border-radius: 12px; /* 座布団の角をほんのり丸くしてオシャレに */
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* 高級感を出す薄い影 */
+    }
+
+    /* ⭕ パソコン版の右側の箱（バラバラの画像たち）は、背景にしたのでスマホでは消す！ */
+    .main-right {
+        display: none;
+    }
+
+    /* タイトルの文字サイズもスマホ用に少しスマートに */
+    .main-left-title {
+        font-size: clamp(40px, 6vw, 60px);
+        margin-bottom: 24px;
+    }
+
+    /* カード全体のコンテナ（HTMLのクラス名に合わせて .main-flex か .main-left-flex にしてください） */
+    .main-left-flex {
+        width: 100% !important; /* ⭕ 座布団の横幅（100%）に強制的に合わせる */
+        max-width: 100% !important; /* ⭕ 699pxの制限を完全に解除してスマホサイズに縮める */
+        margin-left: 0; /* パソコン版の左余白（8px）をリセットして中央に */
+        
+        gap: 16px; /* 縦に並んだカード同士の隙間 */
+    }
+
 }
