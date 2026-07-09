@@ -261,8 +261,19 @@
         width: 100% !important; /* ⭕ 座布団の横幅（100%）に強制的に合わせる */
         max-width: 100% !important; /* ⭕ 699pxの制限を完全に解除してスマホサイズに縮める */
         margin-left: 0; /* パソコン版の左余白（8px）をリセットして中央に */
-        
+        height : auto;
         gap: 16px; /* 縦に並んだカード同士の隙間 */
+    }
+
+    .main-left-card{
+        width : 31%;
+        max-width : 31%;
+        height : auto;
+    }
+
+    .main-left-num{
+        font-size : 48px;
+        height : auto;
     }
 
 }
